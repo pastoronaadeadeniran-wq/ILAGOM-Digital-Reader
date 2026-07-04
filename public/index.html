@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ILAGOM Digital Reader v1.1</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= Toolbar ================= -->
+
+<div id="toolbar">
+
+    <button id="prev">◀ Prev</button>
+
+    <span id="pageInfo">Page 1 / 1</span>
+
+    <button id="next">Next ▶</button>
+
+    <button id="zoomOut">−</button>
+
+    <span id="zoomValue">100%</span>
+
+    <button id="zoomIn">+</button>
+
+    <button id="fullscreen">⛶ Full Screen</button>
+
+</div>
+
+<!-- ================= Loading Screen ================= -->
+
+<div id="loading">
+
+    <h1>ILAGOM DIGITAL READER</h1>
+
+    <h2>JESUS – THE MIRACLE WORKER</h2>
+
+    <p id="loadingText">Preparing your book...</p>
+
+    <div id="progressBar">
+        <div id="progress"></div>
+    </div>
+
+</div>
+
+<!-- ================= FlipBook Viewer ================= -->
+
+<div id="viewer" style="display:none;">
+
+    <div id="book"></div>
+
+</div>
+
+<!-- ================= Libraries ================= -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<script src="/js/page-flip.browser.js"></script>
+
+<script src="/js/app.js"></script>
+
+</body>
+
+</html>
